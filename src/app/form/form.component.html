@@ -1,0 +1,14 @@
+
+<div>
+    <label>Book</label>
+    <select>
+        <option *ngFor="let b of books$ | async">{{ b.title }} ({{ b.isbn }})</option>
+    </select>
+</div>
+
+<div>
+    <label>Author</label>
+    <select>
+        <option *ngFor="let a of authors$ | async">{{ a.name }}</option>
+    </select>
+</div>
